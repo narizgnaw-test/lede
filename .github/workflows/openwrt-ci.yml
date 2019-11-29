@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: myworkflow
+name: openwrt-ci
 
 on:
   schedule:
@@ -68,7 +68,7 @@ jobs:
           # ========================固件定制部分========================
           # 
 
-          # 
+          #  
           # 如果不对本区块做出任何编辑, 则生成默认配置固件. 
           # 
 
