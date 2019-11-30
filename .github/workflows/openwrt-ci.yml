@@ -57,6 +57,7 @@ jobs:
       - name: Update feeds
         run: |
           git remote -v
+          git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git fetch openwrt
           git merge openwrt/master
           git push
