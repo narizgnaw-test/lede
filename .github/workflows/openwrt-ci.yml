@@ -58,8 +58,7 @@ jobs:
         run: |
           git remote -v
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
-          git fetch openwrt
-          git merge openwrt/master
+          git fetch openwrt master
           git push origin master
           ./scripts/feeds update -a
           ./scripts/feeds install -a
