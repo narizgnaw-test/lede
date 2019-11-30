@@ -41,6 +41,8 @@ jobs:
           git fetch openwrt master
           ls
           echo "Git 测试" >> test.md
+          git config --global user.email "ziran@nsfocus.co"
+          git config --global user.name "narizgnaw-test"
           git commit -m "添加 test 文件"
           git push origin master 
           echo "Deleting files, please wait ..."
