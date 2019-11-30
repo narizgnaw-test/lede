@@ -44,6 +44,7 @@ jobs:
           git config --global user.email "ziran@nsfocus.co"
           git config --global user.name "narizgnaw-test"
           git commit -m "添加 test 文件"
+          git add test.md
           git push origin master 
           echo "Deleting files, please wait ..."
           sudo rm -rf \
