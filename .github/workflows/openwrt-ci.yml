@@ -56,7 +56,8 @@ jobs:
 
       - name: Update feeds
         run: |
-          git pull coolsnowwolf/lede master:master
+          git remote add origin git@github.com:coolsnowwolf/lede.git
+          git pl origin master
           git push
           ./scripts/feeds update -a
           ./scripts/feeds install -a
