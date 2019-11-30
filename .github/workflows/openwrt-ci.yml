@@ -56,14 +56,10 @@ jobs:
 
       - name: Update feeds
         run: |
-          git remote add openwrt https://github.com/coolsnowwolf/lede
+          git remote -v
           git fetch openwrt
-          git checkout master
           git merge openwrt/master
-          git reset –hard openwrt/master
-          git commit -am
-          git push origin
-          git push -u origin master -f
+          git push
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
