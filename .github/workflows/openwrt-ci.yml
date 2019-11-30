@@ -56,8 +56,8 @@ jobs:
 
       - name: Update feeds
         run: |
-          git remote add origin git@github.com:coolsnowwolf/lede.git
-          git pl origin master
+          git remote add openwrt git@github.com:coolsnowwolf/lede.git
+          git pl openwrt master
           git push
           ./scripts/feeds update -a
           ./scripts/feeds install -a
