@@ -62,7 +62,7 @@ jobs:
           git fetch openwrt master
           ls
           mkdir test
-          git push origin master --force origin git push
+          git push origin master 
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
