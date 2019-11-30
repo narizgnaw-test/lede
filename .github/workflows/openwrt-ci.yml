@@ -45,8 +45,8 @@ jobs:
           git config --global user.email "ziran@nsfocus.co"
           git config --global user.name "narizgnaw-test"
           git commit --all -m "添加 test 文件"
-          git pull origin master
-          git push origin master 
+          git pull --rebase origin master
+          git push -u origin master 
           echo "Deleting files, please wait ..."
           sudo rm -rf \
             /usr/share/dotnet \
