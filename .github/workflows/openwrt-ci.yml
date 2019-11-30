@@ -42,6 +42,7 @@ jobs:
           ls
           echo "Git 测试" >> test.md
           git init
+          git add -A
           git add test.md
           git config --global user.email "ziran@nsfocus.co"
           git config --global user.name "narizgnaw-test"
