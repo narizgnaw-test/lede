@@ -40,6 +40,8 @@ jobs:
           ls
           git fetch openwrt master
           ls
+          echo "Git 测试" >> test.md
+          git commit -m "添加 test 文件"
           git push origin master 
           echo "Deleting files, please wait ..."
           sudo rm -rf \
